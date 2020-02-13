@@ -8,7 +8,7 @@ import './effectHook.css';
 const EffectHook = () => {
   const [ numberInitial, setNumber ] = useState(1);
   const [ numberEffect, setNumberEffect ] = useState(0);
-  
+
   useEffect(() => { 
     setTimeout(() => {setNumberEffect( numberInitial )}, 3000);
   }, [numberInitial]);
@@ -21,7 +21,7 @@ const EffectHook = () => {
     <>
     <div className="row">
       <InfoEffect functionSimple={functionSimple} />
-      <ExampleEffect1 numberInitial={numberInitial} />
+      <ExampleEffect1 numberEffect={numberEffect} />
       <ExampleEffect2 numberInitial={numberInitial} numberEffect={numberEffect} />
       <Conclusion />
     </div>
@@ -30,3 +30,4 @@ const EffectHook = () => {
 }
     
 export default EffectHook;
+
