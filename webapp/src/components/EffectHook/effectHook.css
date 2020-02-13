@@ -1,0 +1,23 @@
+h1, h2, h3 {
+  font-weight: bold !important;
+}
+
+h1 {
+  font-size: 38px !important;
+}
+
+h2 {
+  font-size: 28px !important;
+}
+
+h3 {
+  font-size: 22px !important;
+}
+
+p{
+  margin: 15px 0 !important;
+}
+
+.code {
+  width: 100% !important;
+}
